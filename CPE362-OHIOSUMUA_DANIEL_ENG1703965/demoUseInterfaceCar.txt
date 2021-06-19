@@ -1,0 +1,40 @@
+package OhiosumuaDaniel_CarInterface;
+
+public class demoUseInterfaceCar implements demoInterfaceCar{
+
+    private int numberPassengers;
+    private double speed;
+
+    public demoUseInterfaceCar(int numberPassengers, double speed){
+
+        this.numberPassengers = numberPassengers;
+        this.speed = speed;
+
+    }
+
+    public int getNumberPassengers(){
+        System.out.println("The number of passengers are: " + numberPassengers);
+        return numberPassengers;
+    }
+
+    public boolean slowDown(double amount){
+        System.out.println("slowDown amount: " + amount);
+        return true;
+    }
+
+    public boolean speedUp(double amount){
+        System.out.println("speedUp amount: " + amount);
+        return true;
+    }
+
+    public double getSpeed(){
+        System.out.println("The speed of the car is: " + speed);
+        return speed;
+    }
+
+    public double getTooFastKPH(){
+        System.out.println("Speed limit is at: " + TOO_FAST_KPH);
+        return demoInterfaceCar.TOO_FAST_KPH;
+    }
+
+}
