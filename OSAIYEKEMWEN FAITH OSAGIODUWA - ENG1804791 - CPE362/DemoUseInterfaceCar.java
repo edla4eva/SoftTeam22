@@ -30,4 +30,6 @@ public class DemoUseInterfaceCar {
 	public double getTooFastKPH() {
 		return DemoInterfaceCar.TOO_FAST_KPH;
 	}
-}
+
+
+} 
